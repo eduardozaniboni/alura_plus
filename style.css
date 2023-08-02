@@ -6,6 +6,7 @@
 
   --description-text: #C0C0C0;
   --bg-button: #167BF7;
+  --bg-button-s: #7ab1f3;
   --bg-primary: #00030C;
 
   --primary-font: 'Inter', sans-serif;
@@ -59,6 +60,11 @@ body {
   margin-bottom: 1em;
 }
 
+.container__button:hover {
+  background-color: var(--bg-button-s);
+  color: var(--black);
+}
+
 .secondary__button {
   background-color: transparent;
   border: 2px solid var(--white);
@@ -100,3 +106,58 @@ body {
 .quaternary {
   text-align: left;
 }
+
+.devices {
+  text-align: center;
+}
+
+.devices__title {
+  font-size: 48px;
+  color: var(--primary-font);
+}
+
+.devices__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 5em 0;
+}
+
+.list__item {
+  font-size: 32px;
+  color: var(--primary-font);
+}
+
+.footer {
+  margin: 145px auto 40px;
+  text-align: center;
+  width: 1200px;
+}
+
+.footer__logo {
+  margin: 2.5em;
+}
+
+.footer__list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.list__link a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+}
+
+.list__link a:hover {
+  color: var(--bg-button);
+}
+
+.footer__text {
+  font-size: 14px;
+  color: var(--description-text);
+}
+
